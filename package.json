@@ -1,6 +1,23 @@
 {
+  "name": "example",
+  "version": "1.0.0",
+  "description": "example",
+  "main": "index.js",
+  "directories": {
+    "tests": "tests",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest --verbose test/*",
+    "start": "node index.js",
+    "reset": "node reset.js"
+  },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "inquirer": "^8.2.4",
-    "jest": "^29.3.1"
+    "inquirer": "8.2.4"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0"
   }
 }

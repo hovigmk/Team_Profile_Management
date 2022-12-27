@@ -70,7 +70,7 @@ const promptManager = () => {
       const manager = new Manager(
         answers.name,
         answers.employeeId,
-        answers.emailadd,
+        answers.email,
         answers.officeNumber
       );
       teamMembers.push(manager);

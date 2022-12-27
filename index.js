@@ -2,11 +2,10 @@ const inquirer = require("inquirer");
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
-// const generateSite = require('./src/generate-site.js'); helper code
+const generateCards = require("./src/generate-cards.js");
 const fs = require("fs");
 const path = require("path");
-const Manager = require("./lib/Manager");
-const OUTPUT_DIR = path.resolve(__dirname, "output");
+const OUTPUT_DIR = path.resolve(__dirname, "dist");
 const outputPath = path.join(OUTPUT_DIR, "index.html");
 const teamMembers = [];
 
@@ -249,6 +248,6 @@ const buildTeam = () => {
   if (!fs.existsSync(OUTPUT_DIR)) {
     fs.mkdirSync(OUTPUT_DIR);
   }
-  fs.writeFileSync(outputPath, generateSite(teamMembers), "utf-8");
+  fs.writeFileSync(outputPath, generateCards(teamMembers), "utf-8");
 };
 promptManager();

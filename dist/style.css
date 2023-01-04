@@ -13,3 +13,14 @@ main {
   padding: 10px;
   margin: 15px;
 }
+
+.card-header {
+  font-size: 30px;
+  white-space: nowrap;
+  overflow: visible;
+}
+.list-group-item {
+  font-size: 30px;
+  white-space: nowrap;
+  overflow: visible;
+}

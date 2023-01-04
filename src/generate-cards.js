@@ -74,12 +74,7 @@ module.exports = (team) => {
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
+    <script src="https://kit.fontawesome.com/1e0a13a89f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../dist/style.css"/>
     ​
     <title>Team Profile Management</title>

@@ -5,7 +5,7 @@ const generateTeam = (team) => {
     console.log(manager);
     let managerHtml = `
         <div class="card" style="width: 18rem;">
-        <div class="card-header">
+        <div class="card-header container-fluid text-white bg-primary p-2">
         ${manager.name} <br/>
         <i class="fas fa-mug-hot"></i>Manager</div>
         <ul class= "list-group list-group-flush">
@@ -19,9 +19,9 @@ const generateTeam = (team) => {
     console.log(engineer);
     let engineerHtml = `
         <div class="card" style="width: 18rem;">
-        <div class="card-header">
+        <div class="card-header container-fluid text-white bg-primary p-2">
         ${engineer.name} <br/>
-        <i class="fas fa-mug-hot"></i>Engineer</div>
+        <i class="fas fa-glasses"></i>Engineer</div>
         <ul class= "list-group list-group-flush">
         <li class = "list-group-item"> ID: ${engineer.id}</li>
         <li class= "list-group-item"> Email: <span id="email"><a href= "mailto:${engineer.email}">${engineer.email}</a></span></li>
@@ -33,9 +33,9 @@ const generateTeam = (team) => {
     console.log(intern);
     let internHtml = `
         <div class="card" style="width: 18rem;">
-        <div class="card-header">
+        <div class="card-header container-fluid text-white bg-primary p-2">
         ${intern.name} <br/>
-        <i class="fas fa-mug-hot"></i>Intern</div>
+        <i class="fas fa-user-graduate"></i>Intern</div>
         <ul class= "list-group list-group-flush">
         <li class = "list-group-item"> ID: ${intern.id}</li>
         <li class= "list-group-item"> Email: <span id="email"><a href= "mailto:${intern.email}">${intern.email}</a></span></li>
@@ -68,7 +68,7 @@ module.exports = (team) => {
     ​
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     />
     <link
       rel="stylesheet"
@@ -85,7 +85,7 @@ module.exports = (team) => {
     <title>Team Profile Management</title>
   </head>
   <body>
-  <header>
+  <header class="container-fluid text-center text-white bg-danger p-2">
   <h1> My Team </h1>
   </header>
   <main> ${generateTeam(team)} </main>

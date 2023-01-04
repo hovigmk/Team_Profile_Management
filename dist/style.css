@@ -1,0 +1,15 @@
+header h1 {
+  padding: 50px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px;
+  padding: 10px;
+}
+
+.card {
+  padding: 10px;
+  margin: 15px;
+}

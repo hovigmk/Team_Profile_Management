@@ -15,7 +15,7 @@ const promptManager = () => {
       {
         type: "input",
         name: "name",
-        message: "What is your name? (Required)",
+        message: "What is your name?*",
         validate: (nameInput) => {
           if (nameInput) {
             return true;
@@ -28,7 +28,7 @@ const promptManager = () => {
       {
         type: "input",
         name: "employeeId",
-        message: "Enter your employee ID? (Required)",
+        message: "Enter your employee ID?*",
         validate: (employeeId) => {
           if (employeeId) {
             return true;
@@ -41,7 +41,7 @@ const promptManager = () => {
       {
         type: "input",
         name: "email",
-        message: "Enter your email? (Required)",
+        message: "Enter your email?*",
         validate: (emailadd) => {
           if (emailadd) {
             return true;
@@ -54,7 +54,7 @@ const promptManager = () => {
       {
         type: "input",
         name: "officeNumber",
-        message: "Enter your office number? (Required)",
+        message: "Enter your office number?*",
         validate: (officeNumber) => {
           if (officeNumber) {
             return true;
@@ -65,13 +65,13 @@ const promptManager = () => {
         },
       },
     ])
-    .then((answers) => {
-      console.log(answers);
+    .then((response) => {
+      console.log(response);
       const manager = new Manager(
-        answers.name,
-        answers.employeeId,
-        answers.email,
-        answers.officeNumber
+        response.name,
+        response.employeeId,
+        response.email,
+        response.officeNumber
       );
       teamMembers.push(manager);
       promptMenu();
@@ -109,7 +109,7 @@ const promptEngineer = () => {
       {
         type: "input",
         name: "name",
-        message: "What is the name of engineer? (Required)",
+        message: "What is the name of engineer?*",
         validate: (engineerName) => {
           if (engineerName) {
             return true;
@@ -122,7 +122,7 @@ const promptEngineer = () => {
       {
         type: "input",
         name: "employeeId",
-        message: "Enter your employee ID? (Required)",
+        message: "Enter your employee ID?*",
         validate: (employeeId) => {
           if (employeeId) {
             return true;
@@ -135,7 +135,7 @@ const promptEngineer = () => {
       {
         type: "input",
         name: "email",
-        message: "Enter your email address? (Required)",
+        message: "Enter your email address?*",
         validate: (email) => {
           if (email) {
             return true;
@@ -148,7 +148,7 @@ const promptEngineer = () => {
       {
         type: "input",
         name: "github",
-        message: "Enter your github username? (Required)",
+        message: "Enter your github username?*",
         validate: (username) => {
           if (username) {
             return true;
@@ -159,13 +159,13 @@ const promptEngineer = () => {
         },
       },
     ])
-    .then((answers) => {
-      console.log(answers);
+    .then((response) => {
+      console.log(response);
       const engineer = new Engineer(
-        answers.name,
-        answers.employeeId,
-        answers.email,
-        answers.github
+        response.name,
+        response.employeeId,
+        response.email,
+        response.github
       );
       teamMembers.push(engineer);
       promptMenu();
@@ -179,7 +179,7 @@ const promptIntern = () => {
       {
         type: "input",
         name: "name",
-        message: "What is the name of intern? (Required)",
+        message: "What is the name of intern?*",
         validate: (internName) => {
           if (internName) {
             return true;
@@ -192,7 +192,7 @@ const promptIntern = () => {
       {
         type: "input",
         name: "employeeId",
-        message: "Enter your employee ID? (Required)",
+        message: "Enter your employee ID?*",
         validate: (employeeId) => {
           if (employeeId) {
             return true;
@@ -205,7 +205,7 @@ const promptIntern = () => {
       {
         type: "input",
         name: "email",
-        message: "Enter your email address? (Required)",
+        message: "Enter your email address?*",
         validate: (email) => {
           if (email) {
             return true;
@@ -218,7 +218,7 @@ const promptIntern = () => {
       {
         type: "input",
         name: "school",
-        message: "Enter your school name? (Required)",
+        message: "Enter your school name?*",
         validate: (schoolname) => {
           if (schoolname) {
             return true;
@@ -229,13 +229,13 @@ const promptIntern = () => {
         },
       },
     ])
-    .then((answers) => {
-      console.log(answers);
+    .then((response) => {
+      console.log(response);
       const intern = new Intern(
-        answers.name,
-        answers.employeeId,
-        answers.email,
-        answers.school
+        response.name,
+        response.employeeId,
+        response.email,
+        response.school
       );
       teamMembers.push(intern);
       promptMenu();

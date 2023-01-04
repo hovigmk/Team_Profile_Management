@@ -8,7 +8,7 @@ SO THAT I have quick access to their emails and GitHub profiles
 
 ## Acceptance Criteria
 
-GIVEN a command-line application that accepts user input
+GIVEN a command-line application that accepts user input  
 WHEN I am prompted for my team members and their information
 THEN an HTML file is generated that displays a nicely formatted team roster based on user input
 WHEN I click on an email address in the HTML
@@ -33,4 +33,4 @@ Type "node index.js" in the command line to use the application.
 
 Repo Link: https://github.com/hovigmk/Team_Profile_Management
 [Test video](./assets/Test.webm)
-[Walkthrough video video](./assets/Walkthrough.webm)
+[Walkthrough video](./assets/Walkthrough.webm)
